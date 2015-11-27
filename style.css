@@ -1,0 +1,34 @@
+body {
+  background: #333;
+  font-family: 'Kaushan Script', cursive;
+  color: white;
+  text-align: center;
+  margin-top:200px;
+}
+
+.circle {
+  margin: auto;
+  
+  height: 128px;
+  width: 128px;
+  background: url(http://hack.lenotta.com/wp-content/uploads/2014/07/60fpsCircleOutput.png);
+  animation: loadingAnimation 6s steps(179, end) infinite;
+  -webkit-animation: loadingAnimation 6s steps(179, end) infinite;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+@-webkit-keyframes loadingAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
